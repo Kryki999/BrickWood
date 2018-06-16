@@ -19,7 +19,6 @@ font-family: 'Nanum Gothic', sans-serif;
 	top: 70px;
 	margin: auto;
 	width:100%;
-	max-width: 1200px;
 	margin-bottom: 80px;
 	color: #fff;
 	text-align: center;
@@ -28,11 +27,10 @@ h2{
 	margin: 0;
 	padding-top: 30px;
 }
-p{
-	margin: 0;
+#about p{
+	margin:10px 10px 10px 10px;
 }
 #about{
-	max-width: 1200px;
 	width:100%;
 	height: auto;
 	margin: auto;
