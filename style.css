@@ -48,6 +48,7 @@ header{
 	box-shadow: 3px -2px 130px -16px rgba(0,0,0,0.75);
 	margin-bottom: 0px;
 	margin-top: 0px;
+	max-width: 1400px;
 }
 .article{
 	height: 1230px;
@@ -60,7 +61,8 @@ header{
 }
 .article-offer{
 	background-color: #ddd;
-	height: 1450px;
+	height: auto;
+	overflow: auto;
 }
 #contact{
 	position: relative;
@@ -340,32 +342,6 @@ ol > li:hover > ul {
 	margin: 0;
 	
 }
-.offer{
-	height: 380px;
-	width: 570px;
-	margin: 10px;
-	margin-bottom: 60px;
-	float: left;
-	cursor: pointer;
-}
-
-.offer img{
-	border: 4px solid black;
-	box-sizing: border-box;
-	height: 380px;
-	width: 570px;
-	position: relative;
-	transition-duration: 0.5s;
-}
-.offer-name{
-	position: absolute;
-   width: 100%;
-   margin: 0;
-   width: 200px;
-   height: 50px;
-	color: white;
-	
-}
 .append-text{
 	position: absolute;
    width: 100%;
@@ -397,16 +373,13 @@ ol > li:hover > ul {
 }
 
 .third-article{
-	height: 400px;
+	min-height: 300px;
+	height: auto;
 	text-align: center;
 	
 }
-.free-space{
-	height: 15%;
-}
 .article-title{
-	height:15%;
-	position: relative;
+	padding: 40px;
 	width: 75%;
 	margin: auto;
 	font-size: 20px;
@@ -496,7 +469,8 @@ ol > li:hover > ul {
 	   transition-duration: 0.4s;
 	}
 .second-article{
-	height: 600px;
+	height: auto;
+	overflow: auto;
 }
 .extra-article{
 	background: #ddd;
@@ -580,38 +554,7 @@ ol > li:hover > ul {
 	height: 100%;
 	float: left;
 }
-.icon-col i{
-	font-size: 100px;
-	color: #BFD641;
-	position: relative;
-	top: 75px;
-	margin-left: 15%;
-	cursor: pointer;
-}
-.text-col{
-	width:60%;
-	height: 100%;
-	float: left;
-	color: white;
-}
-.text-col h3{
-	width: 100%;
-	float: left;
-	height: 50px;
-	text-align: center;
-	
-}
-.text-col p{
-	margin:0px;
-	height:200px;
-	float: left;
-	width: 100%;
-}
-.text-col a{
-	text-decoration: none;
-	cursor: pointer;
-	font-weight: bold;
-}
+
 .stage1-append-text{
 	top: 290px;
 }
@@ -622,155 +565,9 @@ ol > li:hover > ul {
 	top: 1190px;
 }
 /*Wersja na telefony */
-@media (max-width: 1200px){
-	
-#articles{
-	width:95%;
-	margin: auto;
-	-webkit-box-shadow: 3px -2px 130px -16px rgba(0,0,0,0.75);
-	-moz-box-shadow: 3px -2px 130px -16px rgba(0,0,0,0.75);
-	box-shadow: 3px -2px 130px -16px rgba(0,0,0,0.75);
-	margin-bottom: 0px;
-	margin-top: 0px;
-}
-	
-	.burger-nav{
-		display: block;
-		height: 70px;
-		width: 100%;
-		background:  url(img/menu.png) no-repeat 98% center;
-		background-color: #BFD641;
-		cursor: pointer;
-		float: left;
-		margin: 0;
-	}
-	header li{
-		overflow: hidden;
-		background: #505050;
-		height: 0;
-		background:  #EADEDB;
-	}
-	header li.open{
-		height: auto;
-	}
-	header ol{
-		width: 100%;
-		margin: 0;
-		height:180px;
-		top: 0px;
-	}
-	header li{
-		float: none;
-		text-align: left;
-		width: 100%;
-		margin: 0;
-	}
-	ol > li > ul {
-  	display:block;
-	}
-ol > li > ul > li > a {
-  border-top:none;
-}
-	ul a{
-		margin-left: 10px;
-	}
-	.logo-space{
-		width: 100%;
-		height: 0px;
-		text-align: center;
-		background-color: #EADEDB;
-	}
-	.article-offer{
-		
-	}
-	.offer{
-		margin:0px;
-	}
-	#contact{
-	position: relative;
-	height: 300px;
-	background-color:#363237;
-	bottom: 5px;
-}
- .info{
-	text-align: center;
-	height: 33%;
-	width: 100%;
-	float: left;
-	border: none;
-}
-.banner-col-mini{
-	width: 0;
-}
-.banner-col{
-	width:100%;
-	height: 100%;
-	font-size: 20px;
-	
-}
-	#banner i {
-		font-size: 0;
-	}
-	#banner{
-    width: 95%;
-	 margin-left: 2.5%;
-    height: 170px;
-    position: fixed;
-    top: 70px;
-}
-	#container{
-    top: 240px;
-}
-.c-icon{
-	height: 0;
-	font-size: 0;
-	width: 0;
-}
-.c-text{
-	float: left;
-	width: 100%;
-	height: 60%;
-	position: relative;
-	top: 20px;
-}
-}
-/*Mniejsze obrazki z sekcji realizacja*/
-@media (max-width: 1650px){
-	.offer img{
-	height: 266px;
-	width: 400px;
-	text-align: center;
-}
-.offer{
-height: 266px;
-width: 400px;
 
-}
-.stage1{
-	top:325px;
-}
-.stage2{
-	top:660px;
-}
-.stage3{
-	top: 999px;
-}
-.append-text{
-   width: 400px;
-	}
-.stage1-append-text{
-	top: 205px;
-}
-.stage2-append-text{
-	top: 535px;
-}
-.stage3-append-text{
-	top: 870px;
-}
-	.article-offer{
-	height: 1100px;
-}
-}
+/*Mniejsze obrazki z sekcji realizacja*/
+
 @media (max-width: 1650px) and (min-width: 1400px)
 {
 	.left-offer{
@@ -789,4 +586,91 @@ sub{
 }
 .red-border{
 	background-color: #E94B3C;	
+}
+.wrapper{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+section{
+	display: block;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	box-sizing: border-box;
+	text-align: center;
+}
+.one-third{
+	width: 48%;
+	float: left;
+	margin: 1%;
+	
+}
+.offer-space .one-third img:hover{
+	opacity: 0.7;
+}
+.offer-space .one-third img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	box-sizing: border-box;
+	border: 3px solid #000;
+	position: relative;
+}
+@media screen and (max-width: 480px){
+.second-article .one-third{
+		width: 98%;
+		margin: 1%;
+	}
+}
+.second-article .one-third i{
+	font-size: 90px;
+	width: 30%;
+	float: left;
+	position: relative;
+	top: 45px;
+	cursor: pointer;
+	color: #BFD641;
+}
+.second-article .one-third h3{
+	width: 70%;
+	float: right;
+	color: #fff;
+}
+.second-article .one-third p{
+	width: 70%;
+	float: right;
+	color: white;
+	text-align: left;
+}
+
+.second-article .one-third a{
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: bold;
+}
+@media screen and (max-width: 950px){
+	.second-article .one-third i{
+		float: none;
+		position: static;
+		font-size: 100px;
+		width: auto;
+		}
+	.second-article .one-third h3{
+	width: auto;
+	float: none;
+	color: #fff;
+}
+.second-article .one-third p{
+	width: aut.second-article o;
+	float: none;
+	color: white;
+	text-align: center;
+	width: 100%;
+}
+	}
+@media screen and (max-width: 1200px){
+	#articles{
+		width: 95%;
+	}
 }

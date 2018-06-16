@@ -1,8 +1,8 @@
 function Scroll(){
 	var top = document.getElementById('header');
 	var ypos = window.pageYOffset;
-	
-	if(ypos > 250){
+	var width = window.innerWidth;
+	if(ypos > 250 || width < 1200){
 		top.style.height = "100px";
 		top.style.width = "100%";
 		top.style.margin = "0";
@@ -14,6 +14,7 @@ function Scroll(){
 	}
 	
 }
+	
 $(document).ready(function(){
 	$(".burger-nav").on("click", function(){
 		$("header li").toggleClass("open");
@@ -31,6 +32,7 @@ $(document).ready(function(){
 	});
 	
 	window.addEventListener("scroll", Scroll);
+	window.addEventListener("resize", Scroll);
 	$('.offer').hover(function(){
 	   $(this).children("img").css('opacity','0.6');
 		window.yourGlobalVariable = $(this).html();

@@ -1,9 +1,8 @@
 function Scroll(){
 	var top = document.getElementById('header');
 	var ypos = window.pageYOffset;
-	console.log($(window).width());
-	
-	if(ypos > 70){
+	var width = window.innerWidth;
+	if(ypos > 70 || width < 1200){
 		top.style.height = "100px";
 		top.style.width = "100%";
 		top.style.margin = "0";
@@ -15,7 +14,6 @@ function Scroll(){
 	}
 	
 }
-
-$(document).ready(function(){
-	window.addEventListener("scroll", Scroll);
-});
+window.addEventListener("load", Scroll);
+window.addEventListener("scroll", Scroll);
+window.addEventListener("resize", Scroll);
