@@ -2,8 +2,8 @@ function Scroll(){
 	var top = document.getElementById('header');
 	var ypos = window.pageYOffset;
 	var width = window.innerWidth;
-	if(ypos > 250 || width < 1200){
-		top.style.height = "100px";
+	if(ypos > 70 || width < 1200){
+		top.style.height = "80px";
 		top.style.width = "100%";
 		top.style.margin = "0";
 	}
