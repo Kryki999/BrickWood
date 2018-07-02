@@ -3,9 +3,16 @@ function Scroll(){
 	var ypos = window.pageYOffset;
 	var width = window.innerWidth;
 	if(ypos > 70 || width < 1200){
+		if(width < 950){
+		top.style.height = "50px";
+		top.style.width = "100%";
+		top.style.margin = "0";
+		}
+		else{
 		top.style.height = "80px";
 		top.style.width = "100%";
 		top.style.margin = "0";
+		}
 	}
 	else{
 		top.style.height = "70px";
@@ -14,15 +21,12 @@ function Scroll(){
 	}
 	
 }
-	
-$(document).ready(function(){
-	$(".burger-nav").on("click", function(){
-		$("header li").toggleClass("open");
-		
-	});
-	
-	
-});
+
+
+
+window.addEventListener("load", Scroll);
+window.addEventListener("scroll", Scroll);
+window.addEventListener("resize", Scroll);
 
 $(document).ready(function(){
 	$(".yourSlider").nerveSlider({
@@ -30,9 +34,6 @@ $(document).ready(function(){
 		sliderHeight: "500px",
 		sliderResizable: true
 	});
-	
-	window.addEventListener("scroll", Scroll);
-	window.addEventListener("resize", Scroll);
 	$('.offer').hover(function(){
 	   $(this).children("img").css('opacity','0.6');
 		window.yourGlobalVariable = $(this).html();
@@ -58,10 +59,6 @@ $(document).ready(function(){
 	
 });
 
-
-
-/*$('.minus').click(function(){
-		visibleMonth--;
-		if(visibleMonth == -1){visibleMonth = 11; visibleYear--;}
-		CreateMonth(visibleYear,visibleMonth);					
-	}); */
+$(".burger-nav").on("click", function(){
+		$("header ol li").toggleClass("open");
+	});

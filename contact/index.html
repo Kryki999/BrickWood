@@ -10,27 +10,29 @@
 	<link href="../style.css" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <body>
 	<header id="header" class="under-page-header">
 	 	<div class="logo-space"><a href="../index.html">LOGO</a></div>
 			 
 		<a class="burger-nav"></a>
+		<nav>
 		<ol>
-				 <li><a href="#">Kontakt</a></li>
-				 <li><a href="../gallery/index.html">Galeria</a></li>
-				 <li><a href="#">Technologia</a>
-				 </li>
-				 <li><a href="../shop/index.html" class="red-border">Katalog <i class="fas fa-arrow-down"></i></a>
-				 				      <ul>
-				 			<li><a href="#">Cegła</a></li>
+				 
+				 <li><a href="../about/index.html">O nas</a></li>
+				  <li><a href="../shop/index.html" class="red-border">Katalog <i class="fas fa-arrow-down"></i></a>
+				 		<ul>
+				 			<li><a href="../offert/index.html">Cegła</a></li>
 						  <li><a href="#">Domy mieszkalne</a></li>
 						  <li><a href="#">Montaż</a></li>
-      						</ul>
+      				</ul>
 				 </li>
-				 <li><a href="../about/index.html">O nas</a></li>
+				 <li><a href="#">Technologia</a></li>
+				  <li><a href="../gallery/index.html">Galeria</a></li>
+				 <li><a href="../contact/index.html">Kontakt</a></li>
   		</ol>
-		
+  		</nav>
 	</header>
 	
 	<div id="articles">
@@ -87,29 +89,15 @@
 			</div>
 			<div class="second-one">
 			<h2>Napisz do nas bezpośrednio za pomocą formularza</h2>
-			<form class="form" id="contactForm" method="post" novalidate action="/send-scripts.php">
-   
-								<div class="form-row">
-								  <label for="field-name">Nazwa*</label>
-								  <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
-							 </div>
-							 <div class="form-row">
-								  <label for="field-email">Email*</label>
-								  <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
-							 </div>
-							 <div class="form-row">
-								  <label for="field-message">Wiadomość*</label>
-								  <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
-							 </div>
-							 <div class="form-row">
-								  
-							 </div>
-							 <div class="form-row">
-								  <button type="submit" class="submit-btn">
-										Wyślij
-								  </button>
-							 </div>
+						<div id="contact_form_div">
+						<form method="post" action="">
+								<p><input type="text" placeholder="Imię"></p>
+								<p><input type="text" placeholder="Email"></p>
+								<p><input type="text" placeholder="Tel"></p>
+								<p><textarea placeholder="Wiadomość"></textarea></p>
+								<p><input type="submit" value="Wyślij"></p>
 						</form>
+						</div>
 				</div>
 				<div class="second-one open-time">
 				<h2>Godziny otwarcia</h2>
@@ -126,8 +114,8 @@
 				</div>
 				<div class="second-one">
 				<h2>Znajdź nas na mapie</h2>
-<div class="map-responsive">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d386950.6511603643!2d-73.70231446529533!3d40.738882125234106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva+York!5e0!3m2!1ses-419!2sus!4v1445032011908" width="600" height="550" frameborder="0" style="border:0" allowfullscreen></iframe></div></div>
+					<div class="google-maps">
+					<iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81862.85876077056!2d20.145891804437465!3d50.11971108948787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471649c2bca563b5%3A0xa6398b23a98494b9!2stech-sas!5e0!3m2!1spl!2spl!4v1389094245684" width="916" height="200" frameborder="0"></iframe></div></div>
 			</div>
 		</div>
 	</div>
@@ -143,22 +131,17 @@
 
 				</div>
 
-				<div class="footer-left">
+			<div class="footer-left">
 
-					<p class="footer-links">
-						<a href="#">O nas</a>
-						·
-						<a href="#">Katalog</a>
-						·
-						<a href="#">Technologia</a>
-						·
-						<a href="#">Galeria</a>
-						·
-						<a href="#">Kontakt</a>
-					</p>
-
-					<p>Nazwa firmy &copy; 2018</p>
+				<div class="footer-links">
+					<a href="about.html">O nas</a>
+					<a href="#">Katalog</a>
+					<a href="#">Technologia</a>
+					<a href="#">Galeria</a>
+					<a href="#">Kontakt</a>
 				</div>
+				<p>Nazwa firmy &copy; 2018</p>
+			</div>
 
 		</footer>
     <script src="main.js"></script>

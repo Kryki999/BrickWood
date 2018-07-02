@@ -26,7 +26,7 @@ font-family: 'Nanum Gothic', sans-serif;
 }
 #about h2{
 	margin: 0;
-	padding-top: 30px;
+	padding-top: 20px;
 	text-align: center;
 }
 #about p{
@@ -86,20 +86,6 @@ font-family: 'Nanum Gothic', sans-serif;
 .wrapper{
 	max-width: 1450px;
 }
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:66.25%;
-    position:relative;
-    height:0;
-}
-.map-responsive iframe{
-	margin: 2% 0;
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
 .open-time{
 	min-height: 0;
 	height: 150px;
@@ -131,7 +117,35 @@ font-family: 'Nanum Gothic', sans-serif;
 		margin: 1%;
 	}
 	.open-time{
+	padding-top: 30px;
 	min-height: 0;
 	height: auto;
+}
+}
+@media screen and (max-width:380px) {
+.contact-label{
+	width:220px;
+}
+.employer{
+	width: 220px;
+	box-sizing: border-box;
+	border: 1px solid #000;
+	border-bottom: 0;
+	float: left;
+	margin: 2%;
+}
+	.contact-label i{
+	float: left;
+	font-size: 25px;
+	width:50px;
+	color: #BFD641;
+	text-align: center;
+}
+.contact-label p{
+	margin: 0;
+	float: left;
+	font-size: 15px;
+	width: 170px;
+	text-align: left;
 }
 }
