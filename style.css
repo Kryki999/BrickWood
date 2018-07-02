@@ -799,6 +799,13 @@ section{
 }
 }
 @media screen and (max-width: 950px){
+	.burger-nav-main{
+		display: block;
+		height: 50px;
+		width: 100%;
+		background: url(img/menu.png) no-repeat 98% center;
+		cursor: pointer;
+	}
 	.burger-nav{
 		display: block;
 		height: 50px;
