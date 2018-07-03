@@ -52,7 +52,6 @@ header{
 	box-shadow: 3px -2px 130px -16px rgba(0,0,0,0.75);
 	margin-bottom: 0px;
 	margin-top: 0px;
-	max-width: 1450px;
 }
 .article{
 	height: 1230px;
@@ -358,11 +357,12 @@ ol{
 .third-article{
 	min-height: 300px;
 	height: auto;
+	overflow: auto;
 	text-align: center;
 	
 }
 .article-title{
-	padding: 40px;
+	padding: 20px;
 	width: 75%;
 	margin: auto;
 	font-size: 20px;
@@ -655,14 +655,7 @@ section{
 	cursor: pointer;
 	font-weight: bold;
 }
-@media screen and (max-width: 1200px){
-	#articles{
-		width: 95%;
-	}
-	#banner{
-		font-size: 20px;
-	}
-}
+
 #contact{
 	position: relative;
 	height: auto;
@@ -784,19 +777,25 @@ section{
 	.footer-links a{
 		width: 100%;
 	}
+	#slider{
+		height: 0;
+		visibility: hidden;
+	}
 	#banner{
-    width: 75%;
-	 margin-left: 12.5%;
-    height: 80px;
-    position: fixed;
-    top: 70px;
-    text-align: center;
-	 background: #363237;
-	 color: #fff;
-	 font-size: 30px;
-	 align-items: center;
-	 display: flex;
-}
+		position: relative;
+		height: 150px;
+		overflow: auto;
+		background-color: #ddd;
+		color: #000;
+		margin: auto;
+		width: 95%;
+		text-align: center;
+	  align-items: center;
+		top: 53px;
+	}
+	#container{
+		top: 53px;
+	}
 }
 @media screen and (max-width: 950px){
 	.burger-nav{
@@ -973,4 +972,12 @@ box-sizing: border-box;
  {
   width:80%;
  }
+}
+@media screen and (max-width: 1200px){
+	#articles{
+		width: 95%;
+	}
+	#banner{
+		font-size: 20px;
+	}
 }

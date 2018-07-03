@@ -2,24 +2,24 @@ function Scroll(){
 	var top = document.getElementById('header');
 	var ypos = window.pageYOffset;
 	var width = window.innerWidth;
-	if(ypos > 70 || width < 1200){
-		if(width < 950){
-		top.style.height = "50px";
-		top.style.width = "100%";
-		top.style.margin = "0";
-		}
-		else{
+	if(width > 1200){
+	
+	if(ypos > 70){
 		top.style.height = "80px";
 		top.style.width = "100%";
 		top.style.margin = "0";
 		}
-	}
 	else{
 		top.style.height = "70px";
 		top.style.width = "75%";
 		top.style.marginLeft = "12.5%";
 	}
-	
+	}
+	else{
+		top.style.height = "50px";
+		top.style.width = "100%";
+		top.style.marginLeft = "0";
+}
 }
 
 
