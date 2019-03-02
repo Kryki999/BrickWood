@@ -112,7 +112,7 @@ font-family: 'Nanum Gothic', sans-serif;
 	text-align: right;
 }
 @media screen and (max-width:900px) {
-		.second-one{
+	.second-one{
 		width: 98%;
 		margin: 1%;
 	}

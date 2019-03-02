@@ -596,8 +596,9 @@ sub{
 .extra-width{
 	width:400px;
 }
-.red-border{
-	background-color: #E94B3C;	
+.gray-border{
+	background-color: #444;
+    color: #fff;
 }
 .wrapper{
 	max-width: 1200px;
