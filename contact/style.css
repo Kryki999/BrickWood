@@ -102,12 +102,12 @@ font-family: 'Nanum Gothic', sans-serif;
 	margin: 3% 2%;
 }
 .hours-table .day{
-	width: 46%;
+	width: 43%;
 	float: left;
 	text-align: left;
 }
 .hours-table .time{
-	width: 46%;
+	width: 43%;
 	float: left;
 	text-align: right;
 }
