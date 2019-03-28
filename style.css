@@ -757,6 +757,9 @@ section{
 }
 }
 @media screen and (max-width: 480px){
+body{
+    background-image: url();        
+}
 .second-article .one-third{
 		width: 98%;
 		margin: 1%;
