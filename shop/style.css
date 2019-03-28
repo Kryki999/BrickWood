@@ -15,7 +15,7 @@ footer{
 	overflow: auto;
 	padding-top: 30px;
 }
-img{
+.shop-image{
 	display: block;
 	max-width: 100%;
 	height: auto;
@@ -28,7 +28,7 @@ img{
 	float: left;
 	margin: 2%
 }
-img:hover{
+.shop-image:hover{
 	opacity: 0.8;
 }
 @media screen and (max-width: 768px){
