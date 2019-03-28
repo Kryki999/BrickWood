@@ -11,8 +11,8 @@ function Scroll(){
 		}
 	else{
 		top.style.height = "70px";
-		top.style.width = "75%";
-		top.style.marginLeft = "12.5%";
+		top.style.width = "85%";
+		top.style.marginLeft = "7.5%";
 	}
 	}
 	else{
@@ -31,7 +31,7 @@ window.addEventListener("resize", Scroll);
 $(document).ready(function(){
 	$(".yourSlider").nerveSlider({
 		sliderWidth: "100%",
-		sliderHeight: "500px",
+		sliderHeight: "550px",
 		sliderResizable: true
 	});
 	$('.offer').hover(function(){

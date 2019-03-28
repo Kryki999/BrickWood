@@ -16,8 +16,8 @@ function Scroll(){
 	}
 	else{
 		top.style.height = "70px";
-		top.style.width = "75%";
-		top.style.marginLeft = "12.5%";
+		top.style.width = "85%";
+		top.style.marginLeft = "7.5%";
 	}
 	
 }

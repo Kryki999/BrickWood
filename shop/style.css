@@ -75,3 +75,10 @@ img:hover{
     background-color: #2ECC40; /* Green */
     color: #000;
 }
+.extra-article{
+    max-width: 1200px;
+    margin: auto;
+}
+.logo-space img{
+    border: 0;
+}

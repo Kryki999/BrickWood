@@ -2,8 +2,10 @@ header{
 	top: 0px;
 }
 #articles{
-background-color: #ddd;
+background-color: #363237;
 font-family: 'Nanum Gothic', sans-serif;
+position: relative;
+top: 50px;
 }
 #about{
 	background: #ddd;
@@ -14,11 +16,8 @@ font-family: 'Nanum Gothic', sans-serif;
 .about-article{
 	overflow: auto;
 	background-color: #363237;
-	position: relative;
-	top: 70px;
 	margin: auto;
 	width:100%;
-	margin-bottom: 80px;
 	color: #fff;
 	text-align: center;
 	height: auto;

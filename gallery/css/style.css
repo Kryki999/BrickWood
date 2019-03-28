@@ -52,3 +52,6 @@ img:hover{
 		margin: 1%;
 	}
 }
+.logo-space img{
+    border: 0;
+}

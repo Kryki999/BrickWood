@@ -3,28 +3,43 @@ body{
     margin: 0px;
     border: 0px;
    font-family: 'Roboto Slab', serif;
-	background: #363237;
+	background-image: url(img/black_background_wood-wallpaper-1920x1080.jpg);
+    background-color: #363237;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
 
 }
-
+#slider{
+        position: relative;
+        top: 5px;
+}
+.image{
+display: block;
+  width: 100%;
+  height: auto;  
+}
 header{
     height: 70px;
     background: #BFD641;
-    width: 75%;
+    width: 85%;
     z-index: 10;
     position: fixed;
 	 color: #363237;
-	 margin-left: 12.5%;
+	 margin-left: 7.5%;
 	 transition: all 0.4s;
 }
+header img{
+    height:50px;
+}
 #banner{
-    width: 75%;
-	 margin-left: 12.5%;
-    height: 80px;
+    width: 85%;
+	 margin-left: 7.5%;
+    height: 100px;
     position: fixed;
     top: 70px;
     text-align: center;
-	 background: #363237;
 	 color: #fff;
 	 font-size: 30px;
 	 align-items: center;
@@ -33,23 +48,25 @@ header{
 #banner p{
 	margin: auto;
 	width: 100%;
+    opacity: 0;
 }
-
-#container{
-	 z-index: 1;
+.iframe{
     position: relative;
-    top: 150px;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+#container{
+    z-index: 1;
+    position: relative;
+    top: 170px;
     width: 100%;
     margin: auto;
-    background: #363237;
 	
 }
 #articles{
-	width:75%;
+	width:85%;
 	margin: auto;
-	-webkit-box-shadow: 3px -2px 130px -16px rgba(0,0,0,0.75);
-	-moz-box-shadow: 3px -2px 130px -16px rgba(0,0,0,0.75);
-	box-shadow: 3px -2px 130px -16px rgba(0,0,0,0.75);
 	margin-bottom: 0px;
 	margin-top: 0px;
 }
@@ -57,15 +74,20 @@ header{
 	height: 1230px;
 	background-color: #363237;
 	position: relative;
-	bottom: 5px;
+}
+.slider-article{
+    height: 550px;
+    position: relative;
 }
 .article-gray{
 	background-color: #EADEDB;
 }
 .article-offer{
-	background-color: #ddd;
+	background-color: #363237;
 	height: auto;
 	overflow: auto;
+    color: white;
+    width: 100%;
 }
 .banner-img{
  float: left;
@@ -105,15 +127,6 @@ header{
 .dark-teal-text {
     color: #004d40;
 } 
-
-#footer-above{
-	 background: #292c2f;
-    color: white;
-	 height: 500px;
-	 position: relative;
-	 bottom: 5px;
-	 border-bottom: white 1px solid;
-}
 
 .logo-space{
 	width:15%;
@@ -214,7 +227,6 @@ ol{
 	font-size: 13px;
 }
 .c-info{
-	line-height: 50%;
 	font-size: 15px;
 	color: #EADEDB;
 }
@@ -312,7 +324,6 @@ ol{
 .offer-space{
 	width: 100%;
 	height: 100%;
-	float: left;
 	text-align: center;
 	font-size: 30px;
 }
@@ -344,14 +355,6 @@ ol{
 }
 .stage3{
 	top: 1340px;
-}
-.left-offer{
-	float: left;
-	margin-left:30px;
-}
-.right-offer{
-	float: right;
-	margin-right: 30px;
 }
 
 .third-article{
@@ -393,8 +396,8 @@ ol{
 	font: normal 16px sans-serif;
 	padding: 45px 50px;
 	position: relative;
-	bottom: 5px;
 	z-index: 1000000;
+    background: #444;
 }
 
 .footer-distributed .footer-left div{
@@ -444,10 +447,28 @@ ol{
         position: absolute;
         top: 0;
         left: 0;
-        width: 100% !important;
         height: 100% !important;
-    }
+        width: 100% !important;
 
+    }
+.google-yt {
+        margin-top: 20px;
+        width: 70%;
+        margin-left: 15%;
+        position: relative;
+        padding-bottom: 40%;
+        height: 0;
+        overflow: hidden;
+    }
+    .google-yt iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 5%;
+        height: 95% !important;
+        width: 90% !important;
+        border: solid 3px black;
+    }
 
 @media (max-width: 600px) {
 
@@ -491,9 +512,10 @@ ol{
 	border-top: white 3px solid;
 }
 .extra-article{
-	background: #ddd;
+	background-color: #EADEDB;
 	box-sizing: border-box;
-	border-top: 1px black solid;
+	border-top: 3px black solid;
+    border-bottom: 3px black solid;
 	height: auto;
 	overflow: auto;
 }
@@ -616,6 +638,7 @@ section{
 	width: 48%;
 	float: left;
 	margin: 1%;
+    position: relative;
 	
 }
 .offer-space .one-third img:hover{
@@ -630,7 +653,7 @@ section{
 	border: 3px solid #000;
 	position: relative;
 }
-.second-article .one-third i{
+.icon-article i{
 	font-size: 90px;
 	width: 30%;
 	float: left;
@@ -639,31 +662,32 @@ section{
 	cursor: pointer;
 	color: #BFD641;
 }
-.second-article .one-third h3{
+.icon-article h3{
 	width: 70%;
 	float: right;
 	color: #fff;
 }
-.second-article .one-third p{
+.icon-article p{
 	width: 70%;
 	float: right;
 	color: white;
 	text-align: left;
+    font-size: 16px;
 }
 
-.second-article .one-third a{
+.icon-article a{
 	text-decoration: none;
 	cursor: pointer;
 	font-weight: bold;
 }
 
-#contact{
+.contact{
 	position: relative;
 	height: auto;
 	overflow: auto;
 	background-color:#363237;
-	bottom: 5px;
 	margin: 0 auto;
+    border-bottom: 3px black solid;
 }
 .info{
 	height: 100px;
@@ -782,6 +806,15 @@ section{
 		height: 0;
 		visibility: hidden;
 	}
+   .text-block{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 	#banner{
 		position: relative;
 		height: 150px;
@@ -797,6 +830,9 @@ section{
 	#container{
 		top: 53px;
 	}
+    #banner p{
+        opacity: 1;
+    }
 }
 @media screen and (max-width: 950px){
 	.burger-nav{
@@ -980,5 +1016,91 @@ box-sizing: border-box;
 	}
 	#banner{
 		font-size: 20px;
+	}
+}
+.check{
+    border: 0;
+}
+.check-article{
+    border-top: 4px solid black;
+    border-bottom: 3px solid black;
+    background-color: #444;
+    height: auto;
+    overflow: auto;
+    color: #fff;
+}
+.check-article i{
+    color:  #BFD641;
+    border: solid 1px #BFD641;
+    font-size: 45px;
+    float: left;
+    width: 13%;
+    height: 100%;
+}
+.text-container{
+    width: 73%;
+    height: 100%;
+    float: left;
+    text-align: left;
+    margin-left: 2%;
+    
+}
+.check-name{
+    font-size: 18px;
+    width: 100%;
+    margin: 0;
+}
+.check-info{
+    font-size: 13px;
+    float: right;
+    width: 100%;
+    margin: 0;
+}
+.overlay{
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #EADEDB;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: .5s ease;
+}
+.one-third:hover .overlay{
+  bottom: 0;
+  height: 100%;
+}
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text i{
+    font-size: 30px;
+}
+.one-check{
+	width: 29%;
+	float: left;
+	margin: 2%;
+}
+@media screen and (max-width: 768px){
+	.one-check{
+		width: 48%;
+		margin: 1%;
+	}
+}
+@media screen and (max-width: 480px){
+	.one-check{
+		width: 98%;
+		margin: 1%;
 	}
 }
