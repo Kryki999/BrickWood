@@ -32,28 +32,7 @@ $(document).ready(function(){
 		sliderHeight: "550px",
 		sliderResizable: true
 	});
-	$('.offer').hover(function(){
-	   $(this).children("img").css('opacity','0.6');
-		window.yourGlobalVariable = $(this).html();
-		var n = yourGlobalVariable.search("stage1");
-		if(n !== -1){
-			var topParametr="stage1-append-text";
-		}
-		var n = yourGlobalVariable.search("stage2");
-		if(n !== -1){
-			var topParametr="stage2-append-text";
-		}
-		var n = yourGlobalVariable.search("stage3");
-		if(n !== -1){
-			var topParametr="stage3-append-text";
-		}				
-		$(this).append( "<p class='offer-name append-text "+topParametr+"''>Kliknij aby uzyskać więcej informacji</p>");
-},		
-		function(){ 
-	   $(this).children("img").css('opacity','1');
-		$('.append-text').remove();
-	});
-			var width = document.body.clientWidth;
+
 	
 });
 
