@@ -2,23 +2,21 @@ function Scroll(){
 	var top = document.getElementById('header');
 	var ypos = window.pageYOffset;
 	var width = window.innerWidth;
+    var slid = document.getElementById('container');
 	if(width > 1200){
 	
 	if(ypos > 70){
-		top.style.height = "80px";
-		top.style.width = "100%";
+		top.style.height = "90px";
 		top.style.margin = "0";
 		}
 	else{
 		top.style.height = "70px";
-		top.style.width = "85%";
-		top.style.marginLeft = "7.5%";
 	}
 	}
 	else{
 		top.style.height = "50px";
 		top.style.width = "100%";
-		top.style.marginLeft = "0";
+        slid.style.top = "45px";
 }
 }
 
