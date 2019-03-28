@@ -760,6 +760,9 @@ section{
 body{
     background-image: url();        
 }
+.container{
+        top:55px;
+}
 .second-article .one-third{
 		width: 98%;
 		margin: 1%;
