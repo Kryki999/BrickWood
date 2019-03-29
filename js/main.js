@@ -14,7 +14,7 @@ function Scroll(){
 	}
 	}
 	else{
-		top.style.height = "50px";
+		top.style.height = "60px";
 		top.style.width = "100%";
         slid.style.top = "55px";
 }
